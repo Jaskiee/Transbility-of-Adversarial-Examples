@@ -5,7 +5,7 @@ I used different model structure to generate adversarial examples, by implementi
 
 I then refered to some papers ([Adversarial Examples Are Not Bugs, They Are Features](https://arxiv.org/pdf/1905.02175.pdf), [High-frequency Component Helps Explain the Generalization of Convolutional Neural Networks](https://arxiv.org/pdf/1905.13545.pdf)) and they gave the explainations that, the transferability of different network showed that they utilized similar features of the images to make the prediction, and a large portion of these features were imperceptible to humam, these imperceptible features were the real changes of the adversarial examples, and theses features were usually in high-frequency, which were difficult for people to perceive but well utilized by the networks.
 
-This work was first implemented in tensorflow, since I couldn't find cifar-10 pretrained models in tensorflow and retraining the models can really spend lot of time, so I implemented in pytorch with the help of [pytorch tutorial](https://pytorch.org/tutorials/beginner/fgsm_tutorial.html) and repo [PyTorch models trained on CIFAR-10 dataset](https://github.com/huyvnphan/PyTorch_CIFAR10), thanks to these great works.
+This work was first implemented in tensorflow, since I couldn't find cifar-10 pretrained models in tensorflow and retraining the models can really spend lots of time, so I implemented in pytorch with the help of [pytorch tutorial](https://pytorch.org/tutorials/beginner/fgsm_tutorial.html) and repo [PyTorch models trained on CIFAR-10 dataset](https://github.com/huyvnphan/PyTorch_CIFAR10), thanks to these great works.
 
 Here is the result:
 
